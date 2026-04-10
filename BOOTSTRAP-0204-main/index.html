@@ -1,0 +1,369 @@
+<!-- Grupo 8 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sapore</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="css/style.css">
+
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    
+
+</head>
+<body>
+
+<!-- Header/Navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-warning" id="home">
+  <div class="container">
+    
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">Sapore</a>
+
+    <!-- botão menu hambúrguer -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Barra de navegação -->
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#prato">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
+        
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- Seção Hero -->
+
+<div class="hero-section">
+    <h1 class="hero-title">
+                COZINHA <br> ITALIANA
+    </h1>
+
+    <button class="btn-hero" data-bs-toggle="modal" data-bs-target="#modalExperimente">EXPERIMENTE</button>
+</div>
+ 
+
+<!-- Seção Cardápio (menu) -->
+
+<section id="prato" class="menu-section">
+    <div class="container">
+        <h2 class="titulo-menu">Menu</h2>
+
+        <!-- Subnavbar -->
+        <div class="row category-bar mx-2">
+            <div class="col-4">Pizzas</div>
+            <div class="col-4 border-start border-end">Macarronadas</div>
+            <div class="col-4">Lasanhas</div>
+        </div>
+
+        <!-- Carrossel -->
+        <div id="menuCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                    <!-- Card 1 - slide 1 -->
+                    <div class="row g-4 justify-content-center cards-row">
+                        <div class="col-12 col-md-4">
+                            <div class="menu-card">
+                                <img src="img/pizza-card.jpg" alt="Pizza">
+                                <h3 class="nome-produto">Pizza Margherita</h3>
+                                <p> Pizza Margherita: simples, leve e irresistível.</p>
+                                <div class="preco">R$ 40,00</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 - slide 1-->
+                        <div class="col-12 col-md-4">
+                            <div class="menu-card">
+                                <img src="img/macarrao.jpg" alt="Massa">
+                                <h3 class="nome-produto">Espaguete alho e óleo</h3>
+                                <p>Espaguete alho e óleo: simples, aromático e cheio de sabor.</p>
+                                <div class="preco">R$ 30,00</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 - slide 1 -->
+                        <div class="col-12 col-md-4">
+                            <div class="menu-card">
+                                <img src="img/lasanha-com-uma-folha-de-manjericao-em-um-prato-cinza-mostrando-a-culinaria-italiana-e-uma-lasanha-de-carne-caseira-com-espaco-para-texto-visto-de-cima_493325-6398.jpg" alt="Lasanha">
+                                <h3 class="nome-produto">Lasanha</h3>
+                                <p>Camadas de massa, queijo derretido e molho irresistível que abraçam o seu paladar.</p>
+                                <div class="preco">R$ 30,00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item ">
+                     <div class="container">
+                    <!-- Card 1 - slide 2 -->
+                    <div class="row g-4 justify-content-center cards-row ">
+                        <div class="col-12 col-md-4">
+                            <div class="menu-card">
+                                <img src="img/pizza-doce.jpg" alt="Pizza">
+                                <h3 class="nome-produto">Pizza doce com chocolate e morango</h3>
+                                <p>Chocolate cremoso com morangos frescos.</p>
+                                <div class="preco">R$ 40,00</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 - slide 2 -->
+                        <div class="col-12 col-md-4">
+                            <div class="menu-card">
+                                <img src="img/bolonhesa.jpg" alt="Massa">
+                                <h3 class="nome-produto">Espaguete à bolonhesa</h3>
+                                <p>Massa com molho bolonhesa suculento.</p>
+                                <div class="preco">R$ 30,00</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 - slide 3 -->
+                        <div class="col-12 col-md-4">
+                            <div class="menu-card">
+                                <img src="img/4-queijos.jpg" alt="Lasanha">
+                                <h3 class="nome-produto">Lasanha de 4 queijos</h3>
+                                <p>Quatro queijos cremosos em camadas.</p>
+                                <div class="preco">R$ 30,00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- Botão para ir ao slide anterior -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Botão para ir ao próximo slide -->
+            <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next" >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Seção About us -->
+
+<section id="sobre" class="secao-sobre">
+    <div class="container">
+        
+        <!-- Titulo -->
+        <h2 class="titulo-sobre">Sobre nós</h2>
+
+        <!-- Tópico 1 - fundação -->
+        <div class="row">
+            <div class="col-md-4 about-item">
+                <img src="img/loja-image.png" alt="Loja Tradição" class="sobre-img">
+                <p class="texto-sobre">
+                    Fundados em 1987, trazemos a tradição italiana com receitas autênticas e feitas com paixão.
+                </p>
+            </div>
+
+            <!-- Tópico 2 - qualidade -->
+            <div class="col-md-4 about-item">
+                <img src="img/quality-image.png" alt="Selo Qualidade" class="sobre-img">
+                <p class="texto-sobre">
+                    Pizzas com ingredientes selecionados e preparo 100% artesanal, garantindo sabor único.
+                </p>
+            </div>
+
+            <!-- Tópico 3 - site e app  -->
+            <div class="col-md-4 about-item">
+                <img src="img/pc-mobile.png" alt="Dispositivos Digitais" class="sobre-img">
+                <p class="texto-sobre">
+                    Um site simples e rápido para você pedir e aproveitar sem complicação.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Seção - localização -->
+
+<section class="secao-local py-4 px-3 py-md-5 px-md-5" id="local">
+    <div class="container">
+       
+        <!-- Titulo- Localização -->
+        <h2 class="titulo-local text-center display-2 mb-5">Localização</h2>
+        
+        <!-- Conteudo (endereço) -->
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <h3 class="subtitulo-local">ONDE NÓS ESTAMOS?</h3>
+                <p class="texto-local">
+                    R. Padre Raposo, 645 – Mooca.<br>
+                    São Paulo – SP, 03118-001
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-6">
+                <img src="img/local-img.jpg" class="img-fluid rounded shadow" alt="Fachada">
+            </div>
+        </div>
+    </div>
+</section>
+ 
+
+<!-- Seção - Seja nosso parceiro -->
+
+<section class="secao-parceria" id="cta">
+    <div class="container-fluid p-0">
+        <div class="row g-0 align-items-stretch">
+            <div class="col-md-6">
+
+                <div class="parceria-img">
+                    <img src="img/footer-img.jpg" alt="Pizza de camarão sendo servida" class="img-fluid parceria-img">
+                </div>
+            </div>
+            
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="conteudo-parceria px-4 px-lg-5 py-5 w-100">
+
+                    <!-- Titulo -->
+                    <h2 class="titulo-parceria mb-3">SEJA NOSSO PARCEIRO!</h2>
+                    <!-- Subtitulo -->
+                    <p class="texto-parceria mb-4">Receba notificações de pratos novos, novas unidades e descontos imperdíveis.</p>
+
+                    <!-- Formulário -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold mb-1">Nome:</label>
+                            <input type="text" class="form-control rounded-pill border-0 shadow-sm px-4 py-2" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label fw-bold mb-1">Email:</label>
+                            <input type="email" class="form-control rounded-pill border-0 shadow-sm px-4 py-2" id="email" placeholder="Digite seu email">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-btn-cadastrar px-5 py-2 fw-bold text-white rounded-pill">CADASTRAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção footer -->
+ <footer class="secao-footer py-5">
+    <div class="container">
+        <div class="row gy-4 align-items-center">
+            
+            <div class="col-12 col-md-6 text-center text-md-start">
+                
+                <!-- Titulo -->
+                <h2 class="brand-footer">Sapore</h2>
+
+                <!-- Icones -->
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
+                <a href="#"><img src="img/instagram.png" alt="Instagram" class="footer-icon"></a>
+                 <a href="#"><img src="img/twitter.png" alt="Twitter" class="footer-icon"></a>
+                 <a href="#"><img src="img/email.png" alt="Email" class="footer-icon"></a>
+                 <a href="#"><img src="img/linkedin.png" alt="Linkedin" class="footer-icon"></a>
+                 <a href="#"><img src="img/telefone.png" alt="Telefone" class="footer-icon"></a>
+                </div>
+            </div>
+
+            <!-- Navbar a direita -->
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#home" class="footer-link">home</a></li>
+                    <li><a href="#prato" class="footer-link">menu</a></li>
+                    <li><a href="#local" class="footer-link">local</a></li>
+                    <li><a href="#cta" class="footer-link">inscreva-se</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="text-white opacity-50">Sapore Copyright © Todos os direitos reservados</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExperimente" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="conteudo-modal border-0">
+            
+            <!-- Botão fechar -->
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-center pt-0">
+
+                <!-- Titulo do modal -->
+                <h2 class="modal-brand mb-0">Cupons</h2>
+                
+                <!-- Subtitulo -->
+                <p class="subtitulo-modal mb-4" >Selecione um cupom abaixo:</p>
+
+                <!-- Descrição -->
+                <div class="dropdown-custom mb-4">
+                    <div class="d-flex justify-content-between align-items-center bg-light rounded-pill px-4 py-2">
+                        <span class="fw-bold text-secondary">Selecione:</span>
+                        <i class="bi bi-chevron-up text-secondary"></i>
+                    </div>
+                </div>
+
+                <div class="container-cupom rounded-4 p-3">
+                    
+                    <!-- Cupom 1 -->
+                    <div class="coupon-item d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom border-secondary">
+                        <img src="img/macarrão.png" alt="Cupom" class="cupom-img">
+                        <div class="text-end">
+                            <h5 class="tipo-cupom mb-0">cupom macarrão</h5>
+                            <span class="percentual-cupom">30% off</span>
+                        </div>
+                    </div>
+
+                    <!-- Cupom 2 -->
+                    <div class="coupon-item d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom border-secondary">
+                        <img src="img/cupom-pizza.png" alt="Cupom" class="cupom-img">
+                        <div class="text-end">
+                            <h5 class="tipo-cupom mb-0">cupom pizza</h5>
+                            <span class="percentual-cupom">40% off</span>
+                        </div>
+                    </div>
+
+                    <!-- Cupom 3 -->
+                    <div class="coupon-item d-flex align-items-center justify-content-between">
+                        <img src="img/cupom-lasanha.png" alt="Cupom" class="cupom-img">
+                        <div class="text-end">
+                            <h5 class="tipo-cupom mb-0">cupom lasanha</h5>
+                            <span class="percentual-cupom">20% off</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

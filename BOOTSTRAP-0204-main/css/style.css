@@ -1,0 +1,503 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes */
+
+/* 1. Fonte Display (Títulos e Cupons) */
+@font-face {
+    font-family: 'Franky';
+    src: url('../assets/fonts/TheFrankyDunkeyPersonalUse.otf') format('opentype');
+}
+
+/* 2. Fonte de Texto - Versão Regular */
+@font-face {
+    font-family: 'BigJohnPro';
+    src: url('../assets/fonts/BigJohnPRO-Regular.otf') format('opentype');
+}
+
+/* 3. Fonte de Texto - Versão Bold */
+@font-face {
+    font-family: 'BigJohnProBold';
+    src: url('../assets/fonts/BigJohnPRO-Bold.otf') format('opentype');
+}
+
+/* Navbar */
+.navbar.navbar-expand-sm.navbar-light.bg-warning {
+    height: 60px;
+}
+
+.navbar .navbar-brand{
+    font-family: 'Franky';
+    font-size: 2.5rem;  
+    color: #b71c1c;
+}
+
+.navbar-nav{
+    font-family: 'BigJohnProBold';
+    font-size: 1.5rem;
+}
+
+/* Responsividade da header */
+@media (max-width: 576px) {
+    .navbar.navbar-expand-sm.navbar-light.bg-warning{
+        padding-top: 0px;
+        margin: 0px;
+    }
+
+    .navbar-nav.ms-auto {
+        background-color: #ffc107;
+        width: 50rem;
+        padding: 10px;
+    }
+
+    .collapse.navbar-collapse {
+        margin-left: -14px;
+        margin-top: -10px;
+    }
+}
+
+
+
+
+/* Seção hero */
+
+/* Imagem no fundo */
+.hero-section {
+    background-image: url('../img/pizza.jpg');
+    background-size: cover;
+    color: #fff8e1;
+    height: 100vh;
+    padding: 2rem;
+}
+
+/* Titulo na imagem */
+.hero-title {
+    font-family: 'Franky';
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+/* Botão */
+
+.btn-hero{
+    font-family: 'BigJohnProBold';
+    font-size: 2rem;
+    background-color: #18542a;
+    color: #ffefcb;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin-top: 20px;
+    height: 4rem;
+}
+
+.btn-hero:hover{
+    background-color:#1c913f;
+    color:#ffefcb;
+    height: 5rem;
+    transition: 0.8s;
+}
+
+/* Responsividade da hero section */
+@media (max-width: 576px) {
+    .hero-section {
+        padding-left: 1rem;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .btn-hero {
+        width: 15rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* Modal */
+
+/* Fonte do título do modal */
+.dropdown-custom.mb-4 {
+    width: 22rem;
+}
+
+.modal-brand {
+   font-family: 'Franky';
+   color: #e8a631; 
+   font-size: 4rem;
+}
+
+.conteudo-modal {
+    background-color: #104626; 
+    border-radius: 20px;
+}
+
+.subtitulo-modal {
+    color: #e8a631; 
+    font-weight: 300;
+}
+
+.container-modal {
+background-color: rgba(255,255,255,0.05);
+}
+
+/* Estilo dos itens da lista de cupons */
+.cupom-img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tipo-cupom {
+    font-family: 'BigJohnPro';
+    font-weight: 900;
+    color: #e8a631;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+}
+
+.percentual-cupom {
+    font-family: 'BigJohnPro';
+    font-weight: 900;
+    color: #e8a631;
+    font-size: 1.5rem;
+}
+
+/* Responsividade do Modal */
+@media (max-width: 576px) {
+    .cupom-img {
+        width: 80px;
+    }
+    .texto-cupom {
+        font-size: 0.9rem;
+    }
+    .percentual-cupom {
+        font-size: 1.1rem;
+    }
+    .modal-brand {
+        font-size: 3rem ;
+    }
+
+    .dropdown-custom.mb-4 {
+        width: 19rem;
+    }
+}
+
+/* Seção cardápio (menu) */
+
+.menu-section {
+    background-color: #fef2da;
+    padding: 60px 0;
+}
+
+.titulo-menu {
+    font-family: 'Franky';
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Subnavbar */
+.category-bar {
+    background-color: #b71c1c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'BigJohnProBold';
+    font-size: 2rem;
+    margin-bottom: 120px; 
+}
+
+/* Ajuste do Carrossel para não cortar os cards */
+.carousel-inner {
+    overflow: visible ; 
+    padding-top: 100px; 
+    margin-top: -100px; 
+}
+
+.carousel-item {
+    overflow: visible;
+    padding-bottom: 120px;
+}
+
+
+.carousel {
+    padding: 0 10%; /* Cria um "vão" nas laterais */
+    overflow: visible ;
+}
+
+/* Botões carrossel */
+.carousel-control-prev {
+    left: -5% ; /* Move para a esquerda */
+    justify-content: flex-start; /* Alinha o ícone à esquerda da área de clique */
+    width: auto ;
+}
+
+.carousel-control-next {
+    right: -5% ; /* Move para a direita */
+    justify-content: flex-end; /* Alinha o ícone à direita da área de clique */
+    width: auto ;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundinho escuro */
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+
+
+
+/* Cards */
+
+
+.menu-card {
+    background-color: #b71c1c;
+    border-radius: 15px;
+    overflow: visible;
+    padding: 90px 15px 15px 15px;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 100%;
+    font-family: 'BigJohnPro';
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+/* Adiciona uma sombra suave para destacar os cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.menu-card p {
+    font-family: 'BigJohnPro';
+    flex-grow: 1;
+}
+
+
+
+.menu-card img {
+    width: 150px; /* Tamanho da imagem */
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px; 
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #fef2da; /* Borda da cor do fundo */
+    object-fit: cover;
+    z-index: 10; /* Garante que a imagem fique sobre o card */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .row.category-bar {
+        display: none;
+    }
+
+    .cards-row > div {
+        margin-bottom: 50px; /* espaço entre os cards */
+    }
+
+    .menu-card {
+        margin-top: 75px; /* cria espaço entre os cards */
+    }
+
+    .menu-card img {
+        top: -45px; /* diminui o quanto ela sobe */
+        width: 110px;
+        height: 110px;
+    }
+
+}
+
+.nome-produto {
+    font-family: 'BigJohnProBold', serif;
+    font-size: 1.6rem;
+}
+
+/* Preço */
+
+.preco {
+    background-color: #fca311;
+    color: #000;
+    font-family: 'BigJohnProBold';
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: auto;
+    letter-spacing: 4px;
+}
+
+
+.preco:hover {
+    background-color: #F9C068;
+    transition: 0.5s;
+}
+
+/* Setas do carrossel pretas para contrastar com o fundo creme */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
+/* Seção Sobre nós (About Us) */
+
+.secao-sobre {
+    background-color: #b71c1c;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.titulo-sobre {
+    font-family: 'Franky';
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: #fca311;
+    margin-bottom: 60px;
+}
+
+.item-sobre {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.sobre-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+
+.texto-sobre {
+    font-family: 'BigJohnPro';
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Seção localização */
+
+.secao-local {
+    background-color: #3d5a3a; 
+    color: #fef2da; 
+}
+
+.titulo-local {
+    font-family: 'Franky';
+    color: #fef2da;
+}
+
+.subtitulo-local {
+    font-family: 'BigJohnProBold';
+    color: #fca311; 
+    font-size: 3rem;
+}
+
+.texto-local {
+    font-family: 'BigJohnPro';
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* Ajuste fino para o Bootstrap */
+.secao-local img {
+    border: 3px solid #fef2da22; 
+}
+
+
+/* --- Seção - Seja nosso parceiro --- */
+.secao-parceria{
+    background-color: #fef2da; 
+}
+
+.parceria-img{
+    height: 100%;
+    min-height: 400px; /* Garante visibilidade em telas menores */
+}
+
+.parceria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.titulo-parceria{
+    color: #fca311; 
+    font-family: 'BigJohnProBold';
+    font-size: 3rem;
+}
+
+.texto-parceria {
+    font-family: 'BigJohnPro';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.4;
+}
+
+/* Estilização formulário */
+
+.form-label {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    font-size: 0.85rem;
+}
+
+/* Botão cadastrar - cta */
+
+.btn-btn-cadastrar {
+    font-family: 'BigJohnProBold';
+    background-color: #3d5f36; 
+    border: none;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+
+.btn-btn-cadastrar:hover {
+    transform: scale(1.05);
+    background-color: #55A246;
+}
+
+/* Seção footer */
+
+.secao-footer {
+    background-color: #b71c1c; 
+}
+
+.brand-footer {
+    font-family: 'Franky';
+    color: #e8a631; 
+    font-size: 4rem;
+}
+
+
+
+/* Estilo dos navbar da direita */
+.footer-link {
+    font-family: 'BigJohnPro';
+    color: #e8a631;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.8rem;
+    display: block; /* Garante que fiquem um abaixo do outro */
+}
+
+.footer-link:hover {
+    color: #fca311;
+}
